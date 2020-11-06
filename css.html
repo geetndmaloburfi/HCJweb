@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name="keywords" content="hotel,boston hotel,new england hotel">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About | CSS</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HCJ</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+  
+      
+
+  <div class="clr"></div>
+
+  <div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'abouttopic')" id="defaultOpen">About CSS</button>
+		<button class="tablinks" onclick="openCity(event, 'cssback')" >CSS Background</button>
+		<button class="tablinks" onclick="openCity(event, 'cssborder')">CSS Border</button>
+		<button class="tablinks" onclick="openCity(event, 'cssmargin')">CSS Margin</button>
+		<button class="tablinks" onclick="openCity(event, 'csspadding')">CSS Padding</button>
+		<button class="tablinks" onclick="openCity(event, 'cssselector')">CSS Selector</button>
+		<!-- <button class="tablinks" onclick="openCity(event, 'csspselector')">CSS Pseudo Selector</button> -->
+  </div>
+  <!-- topic intro strat here -->
+  <div id="abouttopic" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">About CSS</h1><br>
+      <p>CSS is used to control the style of a web document in a simple and easy way.
+
+        CSS is the acronym for "Cascading Style Sheet". This tutorial covers both the versions CSS1,CSS2 and CSS3, and gives a complete understanding of CSS, starting from its basics to advanced concepts.</p><br><br>
+      <h1>What is CSS?</h1>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files</li>
+      </ul><br>
+      <h1>CSS Solved a Big Problem</h1>
+      <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+      <p>HTML was created to describe the content of a web page, like:</p>
+      <p><b>&lt;h1&gt;</b>This is a heading<b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;p&gt;</b>This is a paragraph.<b>&lt;/p&gt;</b></p>
+      <p>When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+      <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+      <p>CSS removed the style formatting from the HTML page!</p><br><br>
+      <h1>How To Add CSS</h1>
+      <h3>Three Ways to Insert CSS</h3>
+      <ul>
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li>
+      </ul><br>
+      <h1>External CSS</h1>
+      <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+      <p>Each HTML page must include a reference to the external style sheet file inside the <b>&lt;link&gt;</b> element, inside the head section.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;link rel="stylesheet" href="mystyle.css"&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;This is a Heading &lt;/h1&gt;</p>
+        <p >&lt;p&gt;This is a paragraph &lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h1 id="h44">"mystyle.css"</h1>
+      <div class="mystyle" >
+        <p>body {</p>
+        <p id="gap">background-color: lightgreen:</p>
+        <p>}</p>
+        <p></p>
+        <p>h1 {</p>
+        <p id="gap">color: navy;</p>
+        <p id="gap">margin-left: 20px;</p>
+        <p>}</p>
+        <p></p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution1">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+      </div><br><br>
+      <h1>Internal CSS</h1>
+      <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+      <p>The internal style is defined inside the &lt;style&gt; element, inside the head section.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p>Internal styles are defined within the <b>&lt;style&gt;</b> element, inside the <b>&lt;head&gt;</b> section of an HTML page:</p>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p>body {</p>
+        <p id="gap">background-color: lightgreen:</p>
+        <p>}</p>
+        <p></p>
+        <p>h1 {</p>
+        <p id="gap">color: navy;</p>
+        <p id="gap">margin-left: 20px;</p>
+        <p>}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;This is a Heading &lt;/h1&gt;</p>
+        <p >&lt;p&gt;This is a paragraph 1&lt;/p&gt;</p>
+        <p >&lt;p&gt;This is a paragraph 2&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution1">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph 1</p>
+        <p>This is a paragraph 2</p>
+      </div><br><br>
+      <h1>Inline CSS</h1>
+      <p>An inline style may be used to apply a unique style for a single element.</p>
+      <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1 style="color:navy;text-align:center;&gt;This is a Heading &lt;/h1&gt;</p>
+        <p >&lt;p style="color:red;&gt;This is a paragraph&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution2">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph </p>
+      </div><br><br>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- about topic end here  -->
+
+
+  <!-- css background start here  -->
+  <div id="cssback" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Background</h1><br>
+      <p>The CSS background properties are used to define the background effects for elements.</p>
+      <p></p>
+      <p>In these chapters, you will learn about the following CSS background properties:</p>
+      <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+      </ul><br>
+      <h1>CSS background-color</h1>
+      <p>The background-color property specifies the background color of an element.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example" >
+        <p >&lt;p style = "background-color:yellow;"&gt;
+          This text has a yellow background color.&lt;/h1&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution">
+        <p style = "background-color:yellow;">
+          This text has a yellow background color.
+       </p>
+      </div><br><br>
+      <p>With CSS, a color is most often specified by:</p>
+      <p></p>
+      <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+      </ul><br>
+      <h1>CSS background-image</h1>
+      <p>The background-image property specifies an image to use as the background of an element.</p>
+      <p>By default, the image is repeated so it covers the entire element.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p>Set the background image for a page: </p>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p >body {</p>
+        <p >background:  url('../img/bokeh-2072271__340.webp') ;</p>
+        <p>background-repeat: no-repeat;</p>
+        <p >}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution1">
+        <h1>Hello World !</h1>
+        <p>This page has an image as the background! </p>
+      </div><br><br>
+      <h1>CSS background-repeat</h1>
+      <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+      <p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p><br>
+      <h1 id="h44">EXAMPLE -Repeat Vertically</h1>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p >body {</p>
+        <p >background:  url('../img/bgsmall.jpg') ;</p>
+        <p>background-repeat: repeat-x;</p>
+        <p >}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution2">
+        <h1>Hello World !</h1>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+      </div><br><br>
+      <h1 id="h44">EXAMPLE -Repeat Horizontally </h1>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p >body {</p>
+        <p >background:  url('../img/bgsmall.jpg') ;</p>
+        <p>background-repeat: repeat-y;</p>
+        <p >}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution4">
+        <h1>Hello World !</h1>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+      </div><br><br>
+      <h1 id="h44">EXAMPLE -No Repeat</h1>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p >body {</p>
+        <p >background:   url('../img/bgsmall.jpg') ;</p>
+        <p>background-repeat: no-repeat;</p>
+        <p >}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution5">
+        <h1>Hello World !</h1>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+      </div><br><br>
+      <h1>CSS background-position</h1>
+      <p>The background-position property is used to specify the position of the background image.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p> </p>
+      <div class="example" >
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p >&lt;html&gt;</p>
+        <p >&lt;head&gt;</p>
+        <p >&lt;style&gt;</p>
+        <p >body {</p>
+        <p >background:   url('../img/bgsmall.jpg') ;</p>
+        <p>background-repeat: no-repeat;</p>
+        <p>background-position: right top;</p>
+        <p >}</p>
+        <p >&lt;/style&gt;</p>
+        <p >&lt;/head&gt;</p>
+        <p >&lt;body&gt;</p>
+        <p></p>
+        <p >&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+        <p >&lt;p&gt;This page has an image as the background!&lt;/p&gt;</p>
+        <p></p>
+        <p >&lt;/body&gt;</p>
+        <p >&lt;/html&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution6">
+        <h1>Hello World !</h1>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+        <p>This page has an image as the background! </p>
+      </div><br><br>
+      <h1>CSS background-attachment</h1><br>
+      <p>The background-attachment property specifies whether the background image should <b>scroll</b> or be <b>fixed</b> (will not scroll with the rest of the page):</p><br><br>
+      <h1>CSS background - Shorthand property</h1><br>
+      <p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p> Instead of writing:</p>
+      <div class="example" >
+      <p >body {</p>
+        <p >background-color: #ffffff;</p>
+        <p >background:   url('../img/bgsmall.jpg') ;</p>
+        <p>background-repeat: no-repeat;</p>
+        <p>background-position: right top;</p>
+        <p >}</p>
+      </div><br>
+      <h3>You can use the shorthand property background:</h3>
+      <div class="example" >
+        <p >body {</p>
+        <p >background: #ffffff url("img_tree.png") no-repeat right top;</p>
+        <p >}</p>
+      </div>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css background end here  -->
+
+
+  <!-- css border start here  -->
+  <div id="cssborder" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Border</h1><br><br>
+      <h1>CSS Border Properties</h1><br>
+      <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p><br>
+      <h1>CSS Border Style</h1>
+      <p>The border-style property specifies what kind of border to display.</p>
+      <p></p>
+      <p>The following values are allowed:</p>
+      <p></p>
+      <ul>
+        <li><span class="text-primary">dotted</span> - Defines a dotted border</li>
+        <li><span class="text-primary">dashed</span> - Defines a dashed border</li>
+        <li><span class="text-primary">solid</span> - Defines a solid border</li>
+        <li><span class="text-primary">double</span> - Defines a double border</li>
+        <li><span class="text-primary">groover</span> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+        <li><span class="text-primary">ridge</span> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+        <li><span class="text-primary">inset</span> - Defines a 3D inset border. The effect depends on the border-color value</li>
+        <li><span class="text-primary">outset</span> - Defines a 3D outset border. The effect depends on the border-color value</li>
+        <li><span class="text-primary">none</span> - Defines no border</li>
+        <li><span class="text-primary">hidden</span> - Defines a hidden border</li>
+      </ul>
+      <div class="example">
+        <p style="border-style: dotted;">A dotted border.</p>
+        <p style="border-style: dashed;">A dashed border.</p>
+        <p style="border-style: solid;">A solid border.</p>
+        <p style="border-style: double;">A double border.</p>
+        <p style="border-style: groove;">A groove border.</p>
+        <p style="border-style: ridge;">A ridge border.</p>
+        <p style="border-style: inset;">An inset border.</p>
+        <p style="border-style: outset;">An outset border.</p>
+        <p style="border-style: none;">No border.</p>
+        <p style="border-style: hidden;">A hidden border.</p>
+        <p style="border-style: dotted dashed solid double;">A mixed border.</p>
+      </div>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css border ends here -->
+
+
+
+  <!-- css margin start here -->
+  <div id="cssmargin" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Margin</h1><br><br>
+      <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+      <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p><br><br>
+      <h1>Margin - Individual Sides</h1>
+      <p>CSS has properties for specifying the margin for each side of an element:</p>
+      <ul class="text-primary">
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+      </ul>
+      <p>All the margin properties can have the following values:</p>
+      <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - specifies a margin in px, pt, cm, etc.</li>
+        <li>% - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+      </ul>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css margin ends here  -->
+
+
+
+  <!-- css padding starts here -->
+  <div id="csspadding" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Padding</h1><br><br>
+      <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+      <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p><br>
+      <h1>Padding - Individual Sides</h1>
+      <p>CSS has properties for specifying the padding for each side of an element:</p>
+      <ul class="text-primary">
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+      </ul>
+      <p>All the padding properties can have the following values:</p>
+      <ul>
+        <li>length - specifies a padding in px, pt, cm, etc.</li>
+        <li>% - specifies a padding in % of the width of the containing element</li>
+        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+      </ul><br><br>
+      <h1>Padding - Shorthand Property</h1>
+      <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+      <p>The <span class="text-primary">padding</span> property is a shorthand property for the following individual padding properties:</p>
+      <ul class="text-primary">
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+      </ul>
+      <p>So, here is how it works:</p>
+      <p>If the <span class="text-primary">padding</span> property has four values:</p>
+      <ul>
+        <li><b>padding: 25px 50px 75px 100px;</b></li>
+        <li>top padding is 25px</li>
+        <li>right padding is 50px</li>
+        <li>bottom padding is 75px</li>
+        <li>left padding is 100px</li>
+      </ul>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css padding ends here  -->
+
+
+
+  <!-- css selector starts here  -->
+  <div id="cssselector" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Selector</h1><br><br>
+      <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+      <p>We can divide CSS selectors into five categories:</p>
+      <ul>
+        <li><span class="text-primary">Simple selectors</span> (select elements based on name, id, class)</li>
+        <li><span class="text-primary">Combinator selectors</span> (select elements based on a specific relationship between them)</li>
+        <li><span class="text-primary">Pseudo-class selectors</span> (select elements based on a certain state)
+        </li>
+        <li><span class="text-primary">Pseudo-elements selectors</span> (select and style a part of an element)</li>
+        <li><span class="text-primary">Attribute selectors</span> (select elements based on an attribute or attribute value)</li>
+      </ul>
+      <p>This page will explain the most basic CSS selectors.</p><br><br>
+      <h1>The CSS element Selector</h1>
+      <p>The element selector selects HTML elements based on the element name.</p><br>
+      <div class="example">
+        <p>p {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: red;</p>
+        <p> }</p>
+      </div><br><br>
+      <h1>The CSS id Selector</h1>
+      <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+      <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+      <p>To select an element with a specific id, write a hash <b>(#)</b> character, followed by the id of the element.</p>
+      <div class="example">
+        <p>#para1 {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: red;</p>
+        <p> }</p>
+      </div><br><br>
+      <div id="note"><b>Note:</b> An id name cannot start with a number!</div><br><br>
+      <h1>The CSS class Selector</h1>
+      <p>The class selector selects HTML elements with a specific class attribute.</p>
+      <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+      <div class="example">
+        <p>In this example all HTML elements with class="example" will be red and center-aligned: </p>
+        <br>
+        <p>.example {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: red;</p>
+        <p> }</p>
+      </div><br><br>
+      <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+      <div class="example">
+        <p>In this example only &lt;p&gt; elements with class="example" will be center-aligned: </p>
+        <br>
+        <p>p.example {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: red;</p>
+        <p> }</p>
+      </div><br><br>
+      <p>HTML elements can also refer to more than one class.</p>
+      <div class="example">
+        <p>In this example the &lt;p&gt; elements will be styled according to class="example" and to class="primary": </p><br>
+        <p>&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;</p>
+      </div><br><br>
+      <div id="note"><b>Note:</b> A class name cannot start with a number!</div><br><br>
+      <h1>The CSS Universal Selector</h1>
+      <p>The universal selector (*) selects all HTML elements on the page.</p>
+      <div class="example">
+        <p>The CSS rule below will affect every HTML element on the page: </p><br>
+        <p>* {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: green;</p>
+        <p> }</p>
+      </div>
+      <h1>The CSS Grouping Selector</h1>
+      <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+      <p>Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+      <div class="example">
+        <p>h1 {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: green;</p>
+        <p> }</p><br>
+        <p>h2 {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: green;</p>
+        <p> }</p><br>
+        <p>p {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: green;</p>
+        <p> }</p><br>
+      </div>
+      <p>It will be better to group the selectors, to minimize the code.</p>
+      <p>To group selectors, separate each selector with a comma.
+      </p>
+      <div class="example">
+        <p>h1 , h2 , p {</p>
+        <p id="gap">  text-align: center;</p>
+        <p id="gap">  color: green;</p>
+        <p> }</p><br>
+      </div>
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css selector ends here  -->
+
+
+
+  <!-- css pseudo selector starts here  -->
+  <div id="csspselector" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">CSS Pseudo Selector</h1>
+      
+    </div>
+    <div class="info-right">
+      <img src="./img/css1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- css pseudo selector ends here  -->
+
+
+
+  <div class="clr"></div>
+  <script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+  <section id="features">
+    <div class="box1 bg-light">
+      <a href="html.html">
+        <i class="fab fa-html5 fa-5x"></i>
+        <h3>HTML</h3>
+    </div>
+    <div class="box1 bg-primary">
+      <a href="css.html">
+        <i class="fab fa-css3-alt fa-5x"></i>
+        <h3>CSS</h3>
+      </a>
+    </div>
+    <div class="box1 bg-light">
+      <a href="javascript.html">
+        <i class="fab fa-js-square fa-5x"></i>
+        <h3>JAVASCRIPT</h3>
+      </a>
+       
+    </div>
+  </section>
+  <footer id="main-footer">
+    <p>INFORMATION @ 2020</p>
+  </footer>
+</body>
+</html>

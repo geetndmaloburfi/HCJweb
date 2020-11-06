@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name="keywords" content="hotel,boston hotel,new england hotel">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About | JAVASCRIPT</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HCJ</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+  <div class="clr"></div>
+  <!-- vertical tabs -->
+  <div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'abouttopic')" id="defaultOpen">About JAVASCRIPT</button>
+		<button class="tablinks" onclick="openCity(event, 'cssback')" >JS Variable</button>
+		<button class="tablinks" onclick="openCity(event, 'cssborder')">JS Operators</button>
+		<button class="tablinks" onclick="openCity(event, 'cssmargin')">JS Conditional Statements</button>
+		<button class="tablinks" onclick="openCity(event, 'csspadding')">JS Loop</button>
+		<button class="tablinks" onclick="openCity(event, 'cssselector')">JS Function</button>
+  </div>
+
+  <!-- about js starts here  -->
+  <div id="abouttopic" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">About JAVASCRIPT</h1><br><br>
+        <p>JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open and cross-platform.</p>
+        
+        <p>JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser.</p><br>
+        <h1>Application of JavaScript</h1>
+        <p>JavaScript is used to create interactive websites. It is mainly used for:</p>
+        <ul>
+          <li>Client-side validation</li>
+          <li>Dynamic drop-down menus</li>
+          <li>Displaying date and time</li>
+          <li>Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box)</li>
+          <li>Displaying clocks</li>
+        </ul><br>
+        <h1>Places to put JavaScript code</h1>
+        <ol>
+          <li>Between the body tag of html</li>
+          <li>Between the head tag of html</li>
+          <li>In .js file (external javaScript)</li>
+        </ol><br>
+        <h1 id="h44">EXAMPLE - code between the body tag </h1>
+        <div class="example" >
+          <p>&lt;script type="text/javascript"&gt; </p> 
+          <p id="gap">alert("Hello World");</p>  
+          <p>&lt;/script&gt;</p>  
+        </div><br><br>
+        <h1 id="h44">EXAMPLE - code between the head tag </h1>
+        <div class="example" >
+          <p>&lt;!DOCTYPE html&gt;</p>
+          <p >&lt;html&gt;</p>
+          <p >&lt;head&gt;</p>
+          <p id="gap">&lt;script type="text/javascript"&gt; </p> 
+          <p id="gapgap">alert("Hello World");</p>  
+          <p id="gap">&lt;/script&gt;</p>
+          <p >&lt;/head&gt;</p>
+          <p >&lt;body&gt;</p>
+          <p></p>
+          <p id="gap">&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+          <p></p>
+          <p >&lt;/body&gt;</p>
+          <p >&lt;/html&gt;</p>
+        </div><br><br>
+        <h1>External JavaScript file</h1>
+        <p>We can create external JavaScript file and embed it in many html page.</p>
+        <p>It provides code re usability because single JavaScript file can be used in several html pages.</p>
+        <p>An external JavaScript file must be saved by .js extension. It is recommended to embed all JavaScript files into a single file. It increases the speed of the webpage.</p><br>
+        <p>Let's create an external JavaScript file that prints Hello Javatpoint in a alert dialog box.</p><br>
+        <h1 id="h44">message.js</h1>
+        <div class="message">
+          <p>function msg(){</p>  
+          <p>  alert("Hello Javatpoint");</p>  
+          <p> } </p> 
+        </div><br>
+        <p>Let's include the JavaScript file into html page. It calls the JavaScript function on button click.</p>
+        <h1 id="h44">index.html</h1>
+        <div class="example" >
+          <p>&lt;!DOCTYPE html&gt;</p>
+          <p >&lt;html&gt;</p>
+          <p >&lt;head&gt;</p>
+          <p >&lt;script type="text/javascript" src="message.js"&gt; &lt;/script&gt;</p> 
+          <p >&lt;/head&gt;</p>
+          <p >&lt;body&gt;</p>
+          <p></p>
+          <p id="gap">&lt;h1&gt;Hello World !&lt;/h1&gt;</p>
+          <p>&lt;form&gt;</p>
+          <p>&lt;input type="button" value="click" onclick="msg()"/&gt;</p>  
+          <p>&lt;/form&gt;  </p>
+          <p >&lt;/body&gt;</p>
+          <p >&lt;/html&gt;</p>
+        </div><br><br>
+        <h1>Advantages of External JavaScript</h1>
+        <p>There will be following benefits if a user creates an external javascript:</p>
+        <ol>
+          <li>It helps in the reusability of code in more than one HTML file.</li>
+          <li>It allows easy code readability.</li>
+          <li>It is time-efficient as web browsers cache the external js files, which further reduces the page loading time.</li>
+          <li>It enables both web designers and coders to work with html and js files parallelly and separately, i.e., without facing any code conflictions.</li>
+          <li>The length of the code reduces as only we need to specify the location of the js file.</li>
+        </ol><br><br>
+        <h1>Disadvantages of External JavaScript</h1>
+        <p>There are the following disadvantages of external files:</p>
+        <ol>
+          <li>The stealer may download the coder's code using the url of the js file.</li>
+          <li>If two js files are dependent on one another, then a failure in one file may affect the execution of the other dependent file.</li>
+          <li>The web browser needs to make an additional http request to get the js code.</li>
+          <li>A tiny to a large change in the js code may cause unexpected results in all its dependent files.</li>
+          <li>We need to check each file that depends on the commonly created external javascript file.</li>
+          <li>If it is a few lines of code, then better to implement the internal javascript code.</li>
+        </ol>
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="hotel">
+    </div>
+  </div>
+  <!-- about js ends here  -->
+
+
+
+  <!-- JS variables starts here  -->
+  <div id="cssback" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">JavaScript Variable</h1><br><br>
+      <p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable.</p><br>
+      <p>There are some rules while declaring a JavaScript variable (also known as identifiers).</p>
+      <ol>
+        <li>Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</li>
+        <li>After first letter we can use digits (0 to 9), for example value1.</li>
+        <li>JavaScript variables are case sensitive, for example x and X are different variables.</li>
+      </ol>
+      <h1 id="h44">Correct JavaScript Variables </h1>
+      <div class="example" >
+        <p>var x = 10;</p>
+        <p>var _value="sonoo";  </p>
+      </div><br>
+      <h1 id="h44">Incorrect JavaScript Variables </h1>
+      <div class="example" >
+        <p>var 123 = 10;</p>
+        <p>var *bb=1000;  </p>
+      </div><br><br>
+      <h1 id="h44">Example of JavaScript Variable</h1>
+      <p>Let’s see a simple example of JavaScript variable.</p>
+      <div class="example" >
+        <p>&lt;script&gt;</p>
+        <p>var x = 10;</p>
+        <p>var y=1000;  </p>
+        <p>var z=x+y;  </p>
+        <p>document.write(z);  </p>
+        <p>&lt;/script&gt;</p>
+      </div><br><br>
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="hotel">
+    </div>
+  </div>
+  <!-- JS variables  ends here  -->
+
+
+  <!-- JS Operators starts here  -->
+  <div id="cssborder" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">JS Operators</h1><br><br>
+      <p>JavaScript operators are symbols that are used to perform operations on operands. For example:</p><br>
+      <p class="singleline">var sum=10+20; </p>
+      <p>Here, + is the arithmetic operator and = is the assignment operator.</p>
+      <p>There are following types of operators in JavaScript.</p>
+      <ol class="text-primary">
+        <li>Arithmetic Operators</li>
+        <li>Comparison (Relational) Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Logical Operators</li>
+        <li>Assignment Operators</li>
+        <li>Special Operators</li>
+      </ol><br><br>
+      <h1>Arithmetic Operators</h1>
+      <p>Arithmetic operators are used to perform arithmetic operations on the operands. The following operators are known as JavaScript arithmetic operators.</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operation</th>
+          <th>Discription</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>Addition</td>
+          <td>10+20=30</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Subtraction</td>
+          <td>20-10=10</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Multiplication</td>
+          <td>10*20=200</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>DiviSion</td>
+          <td>20/10=2</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Modulus(Remainder)</td>
+          <td>20%10=0</td>
+        </tr>
+        <tr>
+          <td>++</td>
+          <td>Increment</td>
+          <td>var a=10; a++; Now a = 11</td>
+        </tr>
+        <tr>
+          <td>--</td>
+          <td>Decrement</td>
+          <td>var a=10; a--; Now a = 9</td>
+        </tr>
+      </table><br><br>
+      <h1>JS Comparison Operators</h1>
+      <p>The JavaScript comparison operator compares the two operands. The comparison operators are as follows:</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operation</th>
+          <th>Discription</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>==</td>
+          <td>Is equal to</td>
+          <td>10==20 = false</td>
+        </tr>
+        <tr>
+          <td>===</td>
+          <td>Identical (equal and of same type)</td>
+          <td>10===20 = false</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>Not equal to</td>
+          <td>10!=20 = true</td>
+        </tr>
+        <tr>
+          <td>!==</td>
+          <td>Not Identical</td>
+          <td>20!==20 = false</td>
+        </tr>
+        <tr>
+          <td>></td>
+          <td>Greater than</td>
+          <td>20>10 = true</td>
+        </tr>
+        <tr>
+          <td>>=</td>
+          <td>Greater than or equal to</td>
+          <td>20>=20 = true</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>Less than </td>
+          <td>20&lt;10= false</td>
+        </tr>
+        <tr>
+          <td>&lt;=</td>
+          <td>Less than or equal to</td>
+          <td>20&lt;=10= false</td>
+        </tr>
+      </table><br><br>
+      <h1>JS Bitwise Operators</h1>
+      <p>The bitwise operators perform bitwise operations on operands. The bitwise operators are as follows:</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operation</th>
+          <th>Discription</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>&</td>
+          <td>Bitwise AND</td>
+          <td>(10==20 & 20==33) = false</td>
+        </tr>
+        <tr>
+          <td>|</td>
+          <td>Bitwise OR</td>
+          <td>(10==20 | 20==33) = false</td>
+        </tr>
+        <tr>
+          <td>^</td>
+          <td>Bitwise XOR</td>
+          <td>(10==20 ^ 20==33) = false</td>
+        </tr>
+        <tr>
+          <td>~</td>
+          <td>Bitwise NOT</td>
+          <td>(~10) = -10</td>
+        </tr>
+        <tr>
+          <td>&lt;&lt;</td>
+          <td>Bitwise Left Shift</td>
+          <td>(10&lt;&lt;2) = 40</td>
+        </tr>
+        <tr>
+          <td>>></td>
+          <td>Bitwise Right Shift</td>
+          <td>(10>>2) = 2</td>
+        </tr>
+        <tr>
+          <td>>>></td>
+          <td>Bitwise Right Shift with Zero</td>
+          <td>(10>>>2) = 2</td>
+        </tr>
+      </table><br><br>
+      <h1>JS Logical Operators</h1>
+      <p>The following operators are known as JavaScript logical operators.</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operation</th>
+          <th>Discription</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>&&</td>
+          <td>Logical AND</td>
+          <td>(10==20 && 20==33) = false</td>
+        </tr>
+        <tr>
+          <td>||</td>
+          <td>Logical OR</td>
+          <td>(10==20 || 20==33) = false</td>
+        </tr>
+        <tr>
+          <td>!</td>
+          <td>Logical NOT</td>
+          <td>!(10==20 ) = true</td>
+        </tr>
+      </table><br><br>
+      <h1>JS Assignment Operators</h1>
+      <p>The following operators are known as JavaScript assignment operators.</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operation</th>
+          <th>Discription</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>=</td>
+          <td>Assign</td>
+          <td>10+10 = 20</td>
+        </tr>
+        <tr>
+          <td>+=</td>
+          <td>Add and assign</td>
+          <td>var a=10; a+=20; Now a = 30</td>
+        </tr>
+        <tr>
+          <td>-=</td>
+          <td>Subtract and assign</td>
+          <td>var a=20; a-=10; Now a = 10</td>
+        </tr>
+        <tr>
+          <td>*=</td>
+          <td>Multiply and assign</td>
+          <td>var a=20; a*=10; Now a = 200</td>
+        </tr>
+        <tr>
+          <td>/=</td>
+          <td>Divide and assign</td>
+          <td>var a=20; a/=10; Now a = 2</td>
+        </tr>
+        <tr>
+          <td>%=</td>
+          <td>Modulus and assign</td>
+          <td>var a=10; a%=2; Now a = 0</td>
+        </tr>
+      </table><br><br>
+      <h1>JS Special Operators</h1>
+      <p>The following operators are known as JavaScript special operators.</p>
+      <table style="width:100%">
+        <tr>
+          <th>Operator</th>
+          <th>Discription</th>
+        </tr>
+        <tr>
+          <td>(?:)</td>
+          <td>Conditional Operator returns value based on the condition. It is like if-else.</td>
+        </tr>
+        <tr>
+          <td>,</td>
+          <td>Comma Operator allows multiple expressions to be evaluated as single statement.</td>
+        </tr>
+        <tr>
+          <td>delete</td>
+          <td>Delete Operator deletes a property from the object.</td>
+        </tr>
+        <tr>
+          <td>in</td>
+          <td>In Operator checks if object has the given property</td>
+        </tr>
+        <tr>
+          <td>instanceof</td>
+          <td>checks if the object is an instance of given type</td>
+        </tr>
+        <tr>
+          <td>new</td>
+          <td>creates an instance (object)</td>
+        </tr>
+        <tr>
+          <td>typeof</td>
+          <td>checks the type of object.</td>
+        </tr>
+        <tr>
+          <td>void</td>
+          <td>it discards the expression's return value.</td>
+        </tr>
+        <tr>
+          <td>yield</td>
+          <td>checks what is returned in a generator by the generator's iterator.</td>
+        </tr>
+      </table><br><br>
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="hotel">
+    </div>
+  </div>
+  <!--  JS Operators  ends here  -->
+
+
+
+  <!-- JS Conditional statements starts here  -->
+  <div id="cssmargin" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">JS Conditonal Statements</h1><br><br>
+      <p>Conditional statements are used to perform different actions based on different conditions.</p>
+      <p>Very often when you write code, you want to perform different actions for different decisions.</p>
+      <p>You can use conditional statements in your code to do this.</p>
+      <p>In JavaScript we have the following conditional statements:</p>
+      <ul>
+        <li>Use <span class="text-primary">if</span> to specify a block of code to be executed, if a specified condition is true</li>
+        <li>Use <span class="text-primary">else</span> to specify a block of code to be executed, if the same condition is false</li>
+        <li>Use <span class="text-primary">else if</span> to specify a new condition to test, if the first condition is false</li>
+        <li>Use <span class="text-primary">switch</span>h to specify many alternative blocks of code to be executed</li>
+      </ul><br><br>
+      <h1>The if Statement</h1>
+      <p>Use the <span class="text-primary">if</span> statement to specify a block of JavaScript code to be executed if a condition is true.</p>
+      <div class="singleline">
+        <p>if (condition) {</p>
+          <p>//  block of code to be executed if the condition is true</p>
+          <p>}</p>
+      </div><br><br>
+      <h1>The else Statement</h1>
+      <p>Use the <span class="text-primary">else</span> statement to specify a block of code to be executed if the condition is false.</p>
+      <div class="singleline">
+        <p>if (condition) {</p>
+          <p>//  block of code to be executed if the condition is true</p>
+          <p>} else {</p>
+          <p>//  block of code to be executed if the condition is false</p>
+          <p>}</p>
+      </div><br><br>
+      <h1>The else if Statement</h1>
+      <p>Use the <span class="text-primary">else if</span>  statement to specify a new condition if the first condition is false.</p>
+      <div class="singleline">
+        <p>if (condition1) {</p>
+          <p>//  block of code to be executed if the condition1 is true</p>
+        <p>}else if (condition2) {</p>
+          <p>//  block of code to be executed if the condition2 is true</p>
+          <p>} else {</p>
+          <p>//   block of code to be executed if the condition1 is false and condition2 is false</p>
+          <p>}</p>
+      </div><br><br>
+      <h1>The JavaScript Switch Statement</h1>
+      <p>Use the switch statement to select one of many code blocks to be executed.</p>
+      <div class="singleline">
+        <p>switch(expression) {</p>
+        <p>case x:</p>
+        <p>// code block</p>
+        <p>break;</p>
+        <p>case y:</p>
+        <p>// code block</p>
+        <p>break;</p>
+        <p>default;</p>
+        <p>// code block</p>
+        <p>}</p>
+      </div><br>
+      <p>This is how it works:</p>
+      <ul>
+        <li>The switch expression is evaluated once.</li>
+        <li>The value of the expression is compared with the values of each case.</li>
+        <li>If there is a match, the associated block of code is executed.</li>
+        <li>If there is no match, the default code block is executed.</li>
+      </ul>
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="hotel">
+    </div>
+  </div>
+  <!-- JS Conditional statements ends here  -->
+
+
+
+  <!-- JS Loop starts here  -->
+  <div id="csspadding" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">JS Loop</h1><br><br>
+      <h1>Different Kinds of Loops</h1>
+      <p>JavaScript supports different kinds of loops:</p>
+      <ul>
+        <li><span class="text-primary">for</span> - loops through a block of code a number of times
+        </li>
+        <li><span class="text-primary">for/in</span> - loops through the properties of an object
+        </li>
+        <li><span class="text-primary">for/of</span> - loops through the values of an iterable object</li>
+        <li><span class="text-primary">while</span> - loops through a block of code while a specified condition is true</li>
+        <li><span class="text-primary">do/while</span> - also loops through a block of code while a specified condition is true</li>
+      </ul><br><br>
+      <h1>The For Loop</h1>
+      <p>The<span class="text-primary"><b> for</b></span> loop has the following <b>syntax:</b></p>
+      <div class="singleline">
+        <p>for (statement 1; statement 2; statement 3) {</p>
+          <p>// code block to be executed</p>
+          <p>}</p>
+      </div><br><br>
+      <p><b>Statement 1</b> is executed (one time) before the execution of the code block.</p>
+      <p><b>Statement 2</b> defines the condition for executing the code block.</p>
+      <p><b>Statement 3</b> is executed (every time) after the code block has been executed.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example">
+        <p>for (i = 0; i &lt; 5; i++) {</p>
+        <p id="gap">text += "The number is " + i + "&lt;br&gt;"<b>;</b></p>
+        <p>}</p>
+      </div><br><br>
+      <h1>The For/In Loop</h1>
+      <p>The JavaScript <span class="text-primary"> <b>for/in</b></span> statement loops through the properties of an object:</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example ">
+        <p>var person = {fname:"John", lname:"Doe", age:25};</p>
+        <br>
+        <p>var text = "";</p>
+        <p>var x;</p>
+        <p>for (x in person) {</p>
+        <p id="gap"> text += person[x];</p>
+        <p>}</p>
+      </div><br><br>
+      <h1>The For/Of Loop</h1>
+      <p>The JavaScript <span class="text-primary"> <b>for/of</b></span> statement loops through the values of an iterable objects.</p>
+      <p>for/of lets you loop over data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more.</p>
+      <p>The for/of loop has the following <b>syntax:</b></p>
+      <div class="singleline">
+        <p>for (variable of iterable) {</p>
+        <p>// code block to be executed</p>
+        <p>}</p>
+      </div>
+      <p>variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var. </p>
+      <p>iterable - An object that has iterable properties.</p><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example ">
+        <p>var cars = {"BMW","Volvo","Mini"};</p>
+        <p>var x;</p><br>
+        <p>for (x of cars) {</p>
+        <p id="gap"> document.write(x+"&lt;br&gt;");</p>
+        <p>}</p>
+      </div><br><br>
+      <h1>The While Loop</h1><br>
+      <p>The<span class="text-primary"> <b>while</b></span> loop loops through a block of code as long as a specified condition is true.</p>
+      <div class="singleline">
+        <p>while (condition) {</p>
+        <p>// code block to be executed</p>
+        <p>}</p>
+      </div><br>
+      <p>In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:</p>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example">
+        <p>while (i &lt; 10) {</p>
+        <p id="gap">text += "The number is " + i;</p>
+        <p id="gap">i++;</p>
+        <p>}</p>
+      </div><br><br>
+      <h1>The Do/While Loop</h1>
+      <p>The<span class="text-primary"> <b>do/while</b></span>  loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+      <div class="singleline">
+        <p>do {</p>
+        <p>// code block to be executed</p>
+        <p>}while (condition) ;</p>
+      </div><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <p>The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+      <div class="example">
+        <p>do {</p>
+        <p id="gap">text += "The number is " + i;</p>
+        <p id="gap">i++;</p>
+        <p>}while ( i &lt; 10 );</p>
+      </div><br><br>
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="js">
+    </div>
+  </div>
+  <!--  JS Loop  ends here  -->
+
+
+
+  <!-- JS function starts here  -->
+  <div id="cssselector" class="tabcontent">
+    <div class="info-left">
+      <h1 class="l-heading">JavaScript Function</h1><br><br>
+      <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+      <p>A JavaScript function is executed when "something" invokes it (calls it).</p><br><br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example">
+        <p>function myFunction(p1, p2) {</p>
+        <p id="gap">return p1 * p2;   // The function returns the product of p1 and p2</p>
+        <p>}</p>
+      </div><br><br>
+      <h1>JavaScript Function Syntax</h1><br>
+      <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses <b>()</b>.</p>
+      <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+      <p>The parentheses may include parameter names separated by commas:(parameter1, parameter2, ...)</p>
+      <p>The code to be executed, by the function, is placed inside curly brackets: {}</p>
+      <div class="singleline">
+        <p>function name(parameter1, parameter2, parameter3) {</p>
+        <p>// code block to be executed</p>
+        <p>}</p>
+      </div><br>
+      <p>Function parameters are listed inside the parentheses () in the function definition.</p>
+      <p>Function arguments are the values received by the function when it is invoked.</p>
+      <p>Inside the function, the arguments (the parameters) behave as local variables.</p><br><br>
+      <h1>Function Invocation</h1>
+      <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+      <ul>
+        <li>When an event occurs (when a user clicks a button)</li>
+        <li>When it is invoked (called) from JavaScript code</li>
+        <li>Automatically (self invoked)</li>
+      </ul><br><br>
+      <h1>Function Return</h1>
+      <p>When JavaScript reaches a return statement, the function will stop executing.</p>
+      <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+      <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+      <h1 id="h44">EXAMPLE</h1>
+      <p>Calculate the product of two numbers, and return the result:</p>
+      <div class="example">
+        
+        <p>var x= myFunction(p1, p2);  // Function is called, return value will end up in x</p><p></p>
+        <p >function myFunction(a, b) </p>
+        <p>{</p>
+        <p id="gap">return a * b;</p>
+        <p>}</p>
+        <h4>The result in x will be:</h4>
+        <div class="singleline" style="border-radius: 0px; background-color:#bbb ;">
+          <p>12</p>
+        </div>
+      </div><br><br>
+      <p></p>
+
+      
+      
+    </div>
+    <div class="info-right">
+      <img src="./img/js1.webp" alt="hotel">
+    </div>
+  </div>
+  <!-- css pseudo selector ends here  -->
+
+
+
+
+
+
+
+  <div class="clr"></div>
+  <script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <section id="features">
+    <div class="box1 bg-light">
+      <a href="html.html">
+        <i class="fab fa-html5 fa-5x"></i>
+        <h3>HTML</h3>
+    </div>
+    <div class="box1 bg-primary">
+      <a href="css.html">
+        <i class="fab fa-css3-alt fa-5x"></i>
+        <h3>CSS</h3>
+      </a>
+    </div>
+    <div class="box1 bg-light">
+      <a href="javascript.html">
+        <i class="fab fa-js-square fa-5x"></i>
+        <h3>JAVASCRIPT</h3>
+      </a>
+       
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p>INFORMATION @ 2020</p>
+  </footer>
+</body>
+</html>

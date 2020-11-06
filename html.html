@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name="keywords" content="hotel,boston hotel,new england hotel">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About | HTML</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HCJ</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+ 
+
+  <div class="clr"></div>
+  <div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'abouttopic')" id="defaultOpen">About HTML</button>
+		<button class="tablinks" onclick="openCity(event, 'basictags')" >Basic HTML Tags</button>
+		<button class="tablinks" onclick="openCity(event, 'htmllist')">HTML Lists</button>
+		<button class="tablinks" onclick="openCity(event, 'htmltables')">HTML Tables</button>
+		<button class="tablinks" onclick="openCity(event, 'htmlblockinline')">HTML Block & Inline</button>
+  </div>
+  
+
+
+  <!-- about html start -->
+	<div id="abouttopic" class="tabcontent">
+		<div class="info-left">
+      <h1 class="l-heading">About HTML</h1><br><br>
+      <h3>History of HTML</h3>
+      <p>HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML 4.01 version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.</p>
+      <br>
+      <h3>Why we should use HTML?</h3>
+      <p>Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers. Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.</p>
+
+
+      <p>  HTML is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning HTML:</p>
+      <ul>
+        <li><h4>Create Web site </h4>- You can create a website or customize an existing web template if you know HTML well.</li>
+        <li><h4>Become a web designer </h4>- If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.</li>
+        <li><h4>Understand web</h4> - If you want to optimize your website, to boost its speed and performance, it is good to know HTML to yield best results.</li>
+        <li><h4>Learn other languages</h4> - Once you understands the basic of HTML then other related technologies like javascript, php, or angular are become easier to understand.</li>
+      </ul>
+    </div>
+    <div class="info-right">
+      <img src="./img/html1.jpg" alt="hotel">
+    </div>
+    <div class="clr"></div>
+    
+  </div>
+  <!-- about html end -->
+
+
+  <!-- basic html tags start -->
+	<div id="basictags" class="tabcontent">
+		<div class="info-left">
+      <h1 class="l-heading">Basic HTML Tags</h1><br><br>
+      <h1>Heading Tags</h1>
+      <p>Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <b>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;</b>, and <b>&lt;h6&gt;</b>. While displaying any heading, browser adds one line before and one line after that heading.</p>
+      <br>
+      <h1 id="h44">EXAMPLE</h1>
+      <div class="example" >
+        <p>&lt;body&gt;</p>
+        <p id="gap">&lt;h1&gt;Heading 1&lt;/h1&gt;</p>
+        <p id="gap">&lt;h2&gt;Heading 2&lt;/h2&gt;</p>
+        <p id="gap">&lt;h3&gt;Heading 3&lt;/h3&gt;</p>
+        <p id="gap">&lt;h4&gt;Heading 4&lt;/h4&gt;</p>
+        <p id="gap">&lt;h5&gt;Heading 5&lt;/h5&gt;</p>
+        <p id="gap">&lt;h6&gt;Heading 6&lt;/h6&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+      <br><br>
+      <h1>Paragraph Tag</h1>
+        <p>The <b>&lt;p&gt; </b>tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening  and a closing <b>&lt;/p&gt;</b> tag as shown below in the </p><br>
+        <h1 id="h44">EXAMPLE</h1>
+        <div class="example" >
+          <p>&lt;body&gt;</p>
+          <p id="gap">&lt;p&gt;This is first Paragraph&lt;/p&gt;</p>
+          <p id="gap">&lt;p&gt;This is second Paragraph&lt;/p&gt;</p>
+          <p id="gap">&lt;p&gt;This is third Paragraph&lt;/p&gt;</p>
+          <p >&lt;/body&gt;</p>
+        </div>
+          <br>
+          <h3><u>Solution below</u></h3>
+          <div class="solution">
+            <p>This is first Paragraph</p>
+            <p>This is second Paragraph</p>
+            <p>This is third Paragraph</p>
+          </div>
+        
+        <br><br>
+        <h1>Line Break Tag</h1>
+        <p>
+          Whenever you use the <b>&lt;br /&gt; </b>element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.</p>
+
+        <p>The<b>&lt;br /&gt; </b>tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <b>&lt;br &gt; </b> it is not valid in XHTML</p>
+        <h1 id="h44">EXAMPLE</h1>
+        <div class="example" >
+          <p>&lt;body&gt;</p>
+          <p id="gap">&lt;p&gt;This is first line&lt;/p&gt;</p>
+          <p id="gap">&lt;br&gt;</p>
+          <p id="gap">&lt;p&gt;This is second line&lt;/p&gt;</p>
+          <p id="gap">&lt;br&gt;</p>
+          <p id="gap">&lt;p&gt;This is third line&lt;/p&gt;</p>
+          <p >&lt;/body&gt;</p>
+        </div>
+          <br>
+          <h3><u>Solution below</u></h3>
+          <div class="solution">
+            <p>This is first line </p><br> <p>This is second line</p> <br> <p>This third line</p>
+          </div><br><br>
+        <h1>Centering Content</h1>
+        <p>You can use <b>&lt;center&gt;</b> tag to put any content in the center of the page or any table cell.</p>
+        <h1 id="h44">EXAMPLE</h1>
+        <div class="example" >
+          <p>&lt;body&gt;</p>
+          <p id="gap">&lt;p&gt;Text in default position&lt;/p&gt;</p>
+          <p id="gap">&lt;center&gt;</p>
+          <p id="gapgap">&lt;p&gt;Text in center&lt;/p&gt;</p>
+          <p id="gap">&lt/center&gt;</p>
+          <p >&lt;/body&gt;</p>
+        </div>
+          <br>
+          <h3><u>Solution below</u></h3>
+          <div class="solution">
+            <p>Text in default position</p>
+            <p>
+              <center>Text in center</center>
+            </p>
+          </div>
+        <br><br>
+        <h1>Horizontal Lines</h1>
+        <p>Horizontal lines are used to visually break-up sections of a document. The <b>&lt;hr&gt;</b> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.</p>
+        <p>For example, you may want to give a line between two paragraphs as in the given example below −</p>
+        <h1 id="h44">EXAMPLE</h1>
+        <div class="example" >
+          <p>&lt;body&gt;</p>
+          <p id="gap">&lt;p&gt;This is first line&lt;/p&gt;</p>
+          <p id="gap">&lt;hr&gt;</p>
+          <p id="gap">&lt;p&gt;This is second line&lt;/p&gt;</p>
+          <p id="gap">&lt;hr&gt;</p>
+          <p id="gap">&lt;p&gt;This is third line&lt;/p&gt;</p>
+          <p >&lt;/body&gt;</p>
+        </div><br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <p>This is first line </p><hr> <p>This is second line</p> <hr> <p>This third line</p>
+        </div><br><br>
+    </div>
+    <div class="info-right">
+      <img src="./img/html1.jpg" alt="hotel">
+    </div>
+		
+	</div>
+  <!-- basic html tag ends here  -->
+
+
+
+  <!-- lists start here -->
+	<div id="htmllist" class="tabcontent">
+		<div class="info-left">
+      <h1 class="l-heading">HTML Lists</h1><br><br>
+      <p>HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −</p>
+      <ul style="list-style-type:square;">
+        <li><b>&lt;ul&gt;</b>− An unordered list. This will list items using plain bullets.</li>
+        <li><b>&lt;ol&gt;</b>− An ordered list. This will use different schemes of numbers to list your items.</li>
+        <li><b>&lt;dl&gt;</b>− An ordered list. This will use different schemes of numbers to list your items.</li>
+      </ul>
+      <h1>HTML Unordered Lists</h1>
+      <p>An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML <b>&lt;ul&gt;</b> tag. Each item in the list is marked with a bullet.</p><br>
+      <table style="width:100%">
+        <tr>
+          <th>Value</th>
+          <th>Discription</th>
+        </tr>
+        <tr>
+          <td>disc</td>
+          <td>Sets the list item marker to a bullet (default)</td>
+        </tr>
+        <tr>
+          <td>circle</td>
+          <td>Sets the list item marker to a circle</td>
+        </tr>
+        <tr>
+          <td>square</td>
+          <td>Sets the list item marker to a square</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>The list items will not be marked</td>
+        </tr>
+      </table>
+      <br><br>
+      <h1 id="h44">EXAMPLE - Disc</h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ul style="list-style-type:disc;"&gt;</p>
+        <p id="gap">&lt;li&gt;Coffee &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Tea&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Milk&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ul style="list-style-type : disc;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>  
+        </div>
+      <br><br>
+      <h1 id="h44">EXAMPLE - Circle</h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ul style="list-style-type:circle;"&gt;</p>
+        <p id="gap">&lt;li&gt;Car &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Bus&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Bike&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ul style="list-style-type:circle;">
+            <li>Car</li>
+            <li>Bus</li>
+            <li>Bike</li>
+          </ul>  
+        </div>
+      <br><br>
+      <h1 id="h44">EXAMPLE -  Square </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ul style="list-style-type:square;"&gt;</p>
+        <p id="gap">&lt;li&gt;Apple &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Mango&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Banana&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ul style="list-style-type:square;">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+          </ul>  
+        </div>
+      <br><br>
+      <h1 id="h44">EXAMPLE -  None </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ul style="list-style-type:none;"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ul style="list-style-type:none;">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ul>  
+        </div>
+      <br><br>
+      <h1>HTML Ordered Lists</h1>
+      <p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. This list is created by using <b>&lt;ol&gt;</b> tag. The numbering starts at one and is incremented by one for each successive ordered list element tagged with<b>&lt;li&gt;</b>.</p><br><br>
+      <table style="width:100%">
+        <tr>
+          <th>Value</th>
+          <th>Discription</th>
+        </tr>
+        <tr>
+          <td>type="1"</td>
+          <td>The list items will be numbered with numbers (default)</td>
+        </tr>
+        <tr>
+          <td>type="A"</td>
+          <td>The list items will be numbered with uppercase letters</td>
+        </tr>
+        <tr>
+          <td>type="a"</td>
+          <td>The list items will be numbered with lowercase letters</td>
+        </tr>
+        <tr>
+          <td>type="I"</td>
+          <td>The list items will be numbered with uppercase roman numbers</td>
+        </tr>
+        <tr>
+          <td>type="i"</td>
+          <td>The list items will be numbered with uppercase roman numbers</td>
+        </tr>
+      </table>
+      <br><br>
+      <h1 id="h44">Number  </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ol type="1"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ol type="1">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ol> 
+        </div>
+      <br><br>
+      <h1 id="h44">Uppercase Letters  </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ol type="A"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ol type="A">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ol> 
+        </div>
+      <br><br>
+      <h1 id="h44">Lowercase Letters  </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ol type="a"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ol type="a">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ol> 
+        </div>
+      <br><br>
+      <h1 id="h44">Uppercase Roman Numbers:  </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ol type="I"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ol type="I">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ol> 
+        </div>
+      <br><br>
+      <h1 id="h44">Lowercase Roman Numbers:  </h1>
+      <div class="example" >
+        <p >&lt;body&gt;</p>
+        <p>&lt;ol type="i"&gt;</p>
+        <p id="gap">&lt;li&gt;Green &lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Blue&lt;/li&gt;</p>
+        <p id="gap">&lt;li&gt;Red&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p >&lt;/body&gt;</p>
+      </div>
+        <br>
+        <h3><u>Solution below</u></h3>
+        <div class="solution">
+          <ol type="i">
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Red</li>
+          </ol> 
+        </div>
+      <br><br>
+      <h1>HTML Definition Lists</h1>
+      <p>HTML and XHTML supports a list style which is called definition lists where entries are listed like in a dictionary or encyclopedia. The definition list is the ideal way to present a glossary, list of terms, or other name/value list.</p>
+      <p>Definition List makes use of following three tags.</p>
+      <ul style="list-style-type:square;">
+        <li>&lt;dl&gt; − Defines the start of the list</li>
+        <li>&lt;dt&gt; − A term</li>
+        <li>&lt;dd&gt; − Term definition</li>
+        <li>&lt;/dl&gt; − Defines the end of the list</li>
+      </ul> 
+      <h1 id="h44">EXAMPLE </h1>
+      <div class="example" >
+        <p>&lt;dl&gt;</p>
+        <p id="gap">&lt;dt&gt;Coffee&lt;/dt&gt;</p>
+        <p id="gap">&lt;dd&gt;- black hot drink&lt;/dd&gt;</p>
+        <p id="gap">&lt;dt&gt;Milk&lt;/dt&gt;</p>
+        <p id="gap">&lt;dd&gt;- white cold drink&lt;/dd&gt;</p>
+        <p>&lt;/dl&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution"> 
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="info-right">
+      <img src="./img/html1.jpg" alt="hotel">
+    </div>
+  </div>
+  <!-- lists ends here -->
+
+
+
+  <!-- html tables starts here -->
+  <div id="htmltables" class="tabcontent">
+		<div class="info-left">
+      <h1 class="l-heading">HTML Tables</h1><br><br>
+      <p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+      <p>The HTML tables are created using the <b>&lt;table&gt;</b> tag in which the <b>&lt;tr&gt;</b> tag is used to create table rows and <b>&lt;td&gt;</b> tag is used to create data cells. The elements under <b>&lt;td&gt; </b>are regular and left aligned by default</p><br>
+      <h1 id="h44">EXAMPLE </h1>
+      <div class="example" >
+        <p>&lt;table style="width:100%"&gt;</table></p>
+        <p id="gap">&lt;tr&gt;</p>
+        <p id="gapgap">&lt;th&gt;Firstname&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;Lastname&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;Age&lt;/th&gt;</p>
+        <p id="gap">&lt;/tr&gt;</p>
+        <p id="gap">&lt;tr&gt;</p>
+        <p id="gapgap">&lt;td&gt;Jill&lt;/td&gt;</p>
+        <p id="gapgap">&lt;td&gt;Smith&lt;/td&gt;</p>
+        <p id="gapgap">&lt;td&gt;50&lt;/td&gt;</p>
+        <p id="gap">&lt;/tr&gt;</p>
+        <p id="gap">&lt;tr&gt;</p>
+        <p id="gapgap">&lt;th&gt;Marshall&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;Jackson&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;80&lt;/th&gt;</p>
+        <p id="gap">&lt;/tr&gt;</p>
+        <p id="gap">&lt;tr&gt;</p>
+        <p id="gapgap">&lt;th&gt;Joseph&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;Morgan&lt;/th&gt;</p>
+        <p id="gapgap">&lt;th&gt;39&lt;/th&gt;</p>
+        <p id="gap">&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</table></p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution"> 
+        <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Marshall</td>
+            <td>Jackson</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>Joseph</td>
+            <td>Morgan</td>
+            <td>39</td>
+          </tr>
+        </table>
+      </div><br><br>
+      Click Here To Know More About <a href="https://www.w3schools.com/html/html_tables.asp" class="btn btn-dark"> HTML Tables</a>
+    </div>
+    <div class="info-right">
+      <img src="./img/html1.jpg" alt="hotel">
+    </div>
+    <div class="clr"></div>
+  <!-- html tables end here -->
+
+
+
+  <!-- html block and inline starts here  -->
+  </div>
+  <div id="htmlblockinline" class="tabcontent">
+		<div class="info-left">
+      <h1 class="l-heading">HTML Block and Inline Elements</h1><br><br>
+      <p>All the HTML elements can be categorized into two categories <b>(a) </b>Block Level Elements <b>(b)</b> Inline Elements.</p><br>
+      <h1>Block Elements</h1>
+      <p>Block elements appear on the screen as if they have a line break before and after them. For example, the <b>&lt;p&gt;</b>,<b>&lt;h1&gt;</b>,<b>&lt;h2&gt;</b>,<b>&lt;h3&gt;</b>, <b>&lt;h4&gt;</b>,<b>&lt;h5&gt;</b>,<b>&lt;h6&gt;</b>,<b>&lt;ul&gt;</b>,<b>&lt;ol&gt;</b>,<b>&lt;dl&gt;</b>,<b>&lt;pre&gt;</b>,<b>&lt;hr /&gt;</b>,<b>&lt;blockquote&gt;</b>and <b>&lt;address&gt;</b> elements are all block level elements. </p>
+      <p>They all start on their own new line, and anything that follows them appears on its own new line.</p><br>
+      <h1 id="h44">EXAMPLE </h1>
+      <div class="example" >
+        <p>&lt;div&gt;</p>
+        <p id="gap">&lt;p&gt;Div 1 Paragraph one&lt;/p&gt;</p>
+        <p id="gap">&lt;p&gt;Div 1 Paragraph two&lt;/p&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;div&gt;</p>
+        <p id="gap">&lt;p&gt;Div 2 Paragraph one&lt;/p&gt;</p>
+        <p id="gap">&lt;p&gt;Div 2 Paragraph two&lt;/p&gt;</p>
+        <p>&lt;/div&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution"> 
+        <div>
+          <p>Div 1 Paragraph one</p>
+          <p>Div 1 Paragraph two</p>
+        </div>
+        <div>
+          <p>Div 2 Paragraph one</p>
+          <p>Div 2 Paragraph two</p>
+        </div>
+      </div><br><br>
+      <h1>Inline Elements</h1>
+      <p>Inline elements, on the other hand, can appear within sentences and do not have to appear on a new line of their own. The <b>&lt;b&gt;</b>,<b>&lt;i&gt;</b>,<b>&lt;u&gt;</b>,<b>&lt;em&gt;</b>, <b>&lt;strong&gt;</b>,<b>&lt;sup&gt;</b>,<b>&lt;big&gt;</b>,<b>&lt;small&gt;</b>,<b>&lt;li&gt;</b>,<b>&lt;ins&gt;</b>,<b>&lt;del&gt;</b>,<b>&lt;code&gt;</b>,<b>&lt;cite&gt;</b>,<b>&lt;dfn&gt;</b>,<b>&lt;kbd&gt;</b>and<b>&lt;var&gt;</b> elements are all inline elements.</p>
+      <h1 id="h44">EXAMPLE </h1>
+      <div class="example" >
+        <p>&lt;p&gt;</p>
+        <p >&lt;span&gt;Hello &lt;/span&gt;&lt;span&gt;Beauty&lt;/span&gt;</p>
+        <p>&lt;/p&gt;</p>
+      </div><br>
+      <h3><u>Solution below</u></h3>
+      <div class="solution"> 
+       <span>Hello</span><span> Beauty</span>
+      </div><br><br>
+       
+      
+
+
+
+
+    </div>
+    <div class="info-right">
+      <img src="./img/html1.jpg" alt="hotel">
+    </div>
+    <div class="clr"></div>
+  </div>
+  <!-- html block and inline starts here  -->
+
+
+
+	<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+
+<div class="clr"></div>
+  
+  <section id="features">
+    <div class="box1 bg-light">
+      <a href="html.html">
+        <i class="fab fa-html5 fa-5x"></i>
+        <h3>HTML</h3>
+    </div>
+    <div class="box1 bg-primary">
+      <a href="css.html">
+        <i class="fab fa-css3-alt fa-5x"></i>
+        <h3>CSS</h3>
+      </a>
+    </div>
+    <div class="box1 bg-light">
+      <a href="javascript.html">
+        <i class="fab fa-js-square fa-5x"></i>
+        <h3>JAVASCRIPT</h3>
+      </a>
+       
+    </div>
+  </section>
+  <footer id="main-footer">
+    <p>INFORMATION @ 2020</p>
+  </footer>
+ 
+</body>
+</html>
